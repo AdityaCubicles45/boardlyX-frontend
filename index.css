@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0F1117] text-[#E2E8F0] font-sans overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-[#1A1D25] border border-white/5 backdrop-blur-xl;
+  }
+  
+  .gradient-accent {
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-white/20;
+  }
+}
+
+.swipe-btn-gradient {
+  background: linear-gradient(90deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.08) 100%);
+}
